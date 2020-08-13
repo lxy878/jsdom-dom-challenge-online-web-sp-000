@@ -15,7 +15,7 @@ const timer = () => {
 
 // let interval = timer();
 
-console.log(document.getElementById('pause'));
+console.log(document.querySelector('pause'));
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
