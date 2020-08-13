@@ -40,6 +40,7 @@ document.addEventListener('click', (event)=>{
 
 function reset(){
   count = 0;
+  counter.textContent = count;
   interval = timer();
   buttons_disabled();
 }
