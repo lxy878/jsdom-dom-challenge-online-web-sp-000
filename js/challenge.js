@@ -1,39 +1,80 @@
-let playing = true, count = 0;
+let counter = document.getElementById("counter");
+let increment_num = document.getElementById("plus")
+let decrement_num = document.getElementById("minus")
+let pause_resume_btn = document.getElementById("pause")
+let like_btn = document.getElementById("heart")
+let ul = document.querySelector(".likes")
+let li = document.createElement("li")
+let playing = true
+let button_collection = document.getElementsByTagName("button")
+let commentForm = document.getElementById("comment-form")
+let comment = document.querySelector(".comments")
 
-const button_pause = document.getElementById('pause');
+let click = 0
+let count = 0;
+let timer;
 
-const timer = () => {
-  return setInterval(function () {
+timer = function() { 
+    return setInterval(function () {
     count += 1;
-    counter.textContent = count;
-  }, 1000);
+    counter.innerText = count;
+    }, 1000)
 }
 
-let interval = timer();
+interval = timer()
 
-document.addEventListener('click', (event)=>{
-  if(event.target.id === 'plus'){
+pause_resume_btn.addEventListener("click", function() {
+    if (playing == true) {
+        clearInterval(interval);
+        Array.from(button_collection).forEach(function(element) { 
+            if (element.innerText == "pause") {
+                element.disabled = false 
+            } else {
+                element.disabled = true
+            }
+        })
+        pause_resume_btn.innerText = "resume";
+        playing = false
+
+    } else if (playing == false) {
+        Array.from(button_collection).forEach(function(element) { 
+            if (element.innerText == "pause") {
+                element.disabled = false 
+            } else {
+                element.disabled = false
+            }
+        })
+            interval = timer()
+            pause_resume_btn.innerText = "pause"
+            playing = true
+    }  
+})
+increment_num.addEventListener("click", function() {
     count += 1;
-    counter.textContent = count;
-  }else if (event.target.id === 'minus'){
-    console.log('plus1');
-  }else if (event.target.id === 'pause'){
-    if(playing){
-      button_pause.textContent = 'resume';
-      buttons_disable();
-      playing = false;
-    }else{
-      button_pause.textContent = 'pause';
-      playing = true;
-    }
-  }else if (event.target.id === 'heart'){
-    console.log('plus3');
-  }
-});
+    counter.innerText = count;
+})
+increment_num.addEventListener("click", function() {
+    count += 1;
+    counter.innerText = count;
+})
+decrement_num.addEventListener("click", function() {
+    count -=1;
+    counter.innerText = count;
+})
+like_btn.addEventListener("click", function() {
+        click += 1;
+        let li = document.createElement("li")
+        li.innerText = `${count} has been liked ${click}`
+        ul.appendChild(li)
+        setTimeout(function(){click = 0}, 1000)
+    })
 
-function buttons_disable(){
-  button_plus.disable = playing? true : false;
-  button_minus.disable = playing? true : false;
-  button_like.disable = playing? true : false;
-  button_submit.disable = playing? true : false;
-}
+
+
+commentForm.addEventListener("submit", function() {
+        event.preventDefault();
+        let p = document.createElement("p")
+        p.innerText = document.getElementById("comment-input").value
+        comment.appendChild(p)
+    })
+
