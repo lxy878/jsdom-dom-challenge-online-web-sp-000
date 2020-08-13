@@ -52,7 +52,7 @@ function countup(){
   counter.textContent = count;
 }
 
-function countup(){
+function countdown(){
   count ++;
   counter.textContent = count;
 }
