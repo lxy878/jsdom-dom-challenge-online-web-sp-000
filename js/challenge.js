@@ -30,7 +30,6 @@ document.addEventListener('click', (event)=>{
       playing = false;
     }else{
       button_pause.textContent = 'pause';
-      buttons_disabled();
       reset();
       playing = true;
     }
@@ -42,6 +41,7 @@ document.addEventListener('click', (event)=>{
 function reset(){
   count = 0;
   interval = timer();
+  buttons_disabled();
 }
 function buttons_disabled(){
   button_plus.disabled = playing? true : false;
