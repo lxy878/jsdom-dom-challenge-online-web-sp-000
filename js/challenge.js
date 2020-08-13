@@ -1,5 +1,12 @@
 let playing = true;
-
+// const timer = () => {
+//   return setInterval(function () {
+//     count += 1;
+//     counter.textContent = count;
+//   }, 1000);
+// }
+//
+// interval = timer();
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
