@@ -52,6 +52,11 @@ function countup(){
   counter.textContent = count;
 }
 
+function countup(){
+  count ++;
+  counter.textContent = count;
+}
+
 function reset(){
   count = 0;
   counter.textContent = count;
