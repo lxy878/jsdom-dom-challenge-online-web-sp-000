@@ -38,8 +38,7 @@ document.addEventListener('click', (event)=>{
     li.innerText = `${count} liked`;
     document.querySelector('ul.likes').appendChild(li);
   }else if (event.target.id === 'submit'){
-    // event.preventDefault();
-    event.target.reset();
+    event.preventDefault();
   }
 
 });
