@@ -37,7 +37,10 @@ document.addEventListener('click', (event)=>{
     const li = document.createElement('li');
     li.innerText = `${count} liked`;
     document.querySelector('ul.likes').appendChild(li);
+  }else if (event.target.id === 'submit'){
+    event.target.reset();
   }
+
 });
 
 function reset(){
