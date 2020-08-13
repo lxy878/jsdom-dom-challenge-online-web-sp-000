@@ -15,6 +15,7 @@ const timer = () => {
 
 // let interval = timer();
 
+console.log(button_pause);
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
     count += 1;
