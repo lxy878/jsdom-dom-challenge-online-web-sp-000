@@ -35,7 +35,7 @@ document.addEventListener('click', (event)=>{
     }
   }else if (event.target.id === 'heart'){
     const likes = document.querySelector('ul.likes');
-    likes.createElement('li');
+    document.createElement('li');
   }
 });
 
