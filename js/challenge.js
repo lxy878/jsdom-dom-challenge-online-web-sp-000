@@ -37,7 +37,7 @@ document.addEventListener('click', (event)=>{
   }
 });
 
-function buttons_disable(){
+function buttons_disabled(){
   button_plus.disabled = playing? true : false;
   button_minus.disabled = playing? true : false;
   button_likes.disabled = playing? true : false;
