@@ -38,6 +38,7 @@ document.addEventListener('click', (event)=>{
     li.innerText = `${count} liked`;
     document.querySelector('ul.likes').appendChild(li);
   }else if (event.target.id === 'submit'){
+    const comment = document.querySelector('input#comment-input')
     event.preventDefault();
   }
 
