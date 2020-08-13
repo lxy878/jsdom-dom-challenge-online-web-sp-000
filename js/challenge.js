@@ -8,7 +8,7 @@ const button_submit = document.getElementById('submit');
 
 const timer = () => {
   return setInterval(function (count = 0) {
-    count += 1;
+    count ++;
     counter.textContent = count;
   }, 1000);
 }
