@@ -1,4 +1,9 @@
 let playing = true, count = 0;
+const button_pause = document.getElementById('pause');
+const button_pause = document.getElementById('pause');
+const button_pause = document.getElementById('pause');
+const button_pause = document.getElementById('pause');
+
 
 const timer = () => {
   return setInterval(function () {
@@ -15,9 +20,8 @@ document.addEventListener('click', (event)=>{
   }else if (event.target.id === 'minus'){
     console.log('plus1');
   }else if (event.target.id === 'pause'){
-    const button = document.getElementById('pause');
     if(playing){
-      button.textContent = 'resume';
+      button_pause.textContent = 'resume';
       playing = false;
     }else{
       button.textContent = 'pause';
