@@ -10,7 +10,7 @@ const timer = (fun) => {
   return setInterval(fun, 1000);
 }
 
-let interval = timer();
+let interval = timer(countup);
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
