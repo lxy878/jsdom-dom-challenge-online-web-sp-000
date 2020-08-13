@@ -1,5 +1,3 @@
-'use strict';
-
 let playing = true;
 // const timer = () => {
 //   return setInterval(function () {
