@@ -31,7 +31,7 @@ document.addEventListener('click', (event)=>{
     }else{
       button_pause.textContent = 'pause';
       buttons_disabled();
-      reset()
+      reset();
       playing = true;
     }
   }else if (event.target.id === 'heart'){
@@ -39,6 +39,10 @@ document.addEventListener('click', (event)=>{
   }
 });
 
+function reset(){
+  count = 0;
+  interval = timer();
+}
 function buttons_disabled(){
   button_plus.disabled = playing? true : false;
   button_minus.disabled = playing? true : false;
