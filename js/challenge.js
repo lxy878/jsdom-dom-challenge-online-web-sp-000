@@ -19,7 +19,7 @@ document.addEventListener('click', (event)=>{
     console.log('plus1');
   }else if (event.target.id === 'pause'){
     if(playing){
-      button.textContent = 'resume';
+      button_pause.textContent = 'resume';
       playing = false;
     }else{
       button.textContent = 'pause';
