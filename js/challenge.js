@@ -1,7 +1,7 @@
 var playing = true, count = 0;
 
 const button_pause = document.getElementById('pause');
-const button_pause = document.getElementById('plus');
+const button_plue = document.getElementById('plus');
 
 const timer = () => {
   return setInterval(function () {
