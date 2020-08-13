@@ -14,7 +14,7 @@ let click = 0
 let count = 0;
 let timer;
 
-timer = function() { 
+timer = function() {
     return setInterval(function () {
     count += 1;
     counter.innerText = count;
@@ -26,9 +26,9 @@ interval = timer()
 pause_resume_btn.addEventListener("click", function() {
     if (playing == true) {
         clearInterval(interval);
-        Array.from(button_collection).forEach(function(element) { 
+        Array.from(button_collection).forEach(function(element) {
             if (element.innerText == "pause") {
-                element.disabled = false 
+                element.disabled = false
             } else {
                 element.disabled = true
             }
@@ -37,9 +37,9 @@ pause_resume_btn.addEventListener("click", function() {
         playing = false
 
     } else if (playing == false) {
-        Array.from(button_collection).forEach(function(element) { 
+        Array.from(button_collection).forEach(function(element) {
             if (element.innerText == "pause") {
-                element.disabled = false 
+                element.disabled = false
             } else {
                 element.disabled = false
             }
@@ -47,7 +47,7 @@ pause_resume_btn.addEventListener("click", function() {
             interval = timer()
             pause_resume_btn.innerText = "pause"
             playing = true
-    }  
+    }
 })
 increment_num.addEventListener("click", function() {
     count += 1;
@@ -77,4 +77,3 @@ commentForm.addEventListener("submit", function() {
         p.innerText = document.getElementById("comment-input").value
         comment.appendChild(p)
     })
-
