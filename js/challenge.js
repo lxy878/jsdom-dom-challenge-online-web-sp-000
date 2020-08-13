@@ -31,6 +31,7 @@ document.addEventListener('click', (event)=>{
     }else{
       button_pause.textContent = 'pause';
       buttons_disabled();
+      reset()
       playing = true;
     }
   }else if (event.target.id === 'heart'){
