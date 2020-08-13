@@ -1,5 +1,7 @@
 var playing = true, count = 0;
 
+const button_pause = document.getElementById('pause');
+
 const timer = () => {
   return setInterval(function () {
     count += 1;
