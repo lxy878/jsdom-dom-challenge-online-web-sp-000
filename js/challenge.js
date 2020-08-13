@@ -32,3 +32,11 @@ document.addEventListener('click', (event)=>{
     console.log('plus3');
   }
 });
+
+function buttons_disable(){
+  button_pause.disable = playing? true : false;
+  button_plus.disable = playing? true : false;
+  button_minus.disable = playing? true : false;
+  button_likes.disable = playing? true : false;
+  button_heart.disable = playing? true : false;
+}
