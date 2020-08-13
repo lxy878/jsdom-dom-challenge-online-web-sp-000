@@ -44,5 +44,3 @@ function buttons_disabled(){
   button_heart.disabled = playing? true : false;
   button_submit.disabled = playing? true : false;
 }
-
-function stop_count()
