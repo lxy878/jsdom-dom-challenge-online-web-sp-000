@@ -17,7 +17,7 @@ interval = timer();
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
-    console.log('plus');
+    count ++;
   }else if (event.target.id === 'minus'){
     console.log('plus1');
   }else if (event.target.id === 'pause'){
