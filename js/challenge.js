@@ -26,6 +26,7 @@ document.addEventListener('click', (event)=>{
     if(playing){
       button_pause.textContent = 'resume';
       buttons_disabled();
+      clearInterval(interval)
       playing = false;
     }else{
       button_pause.textContent = 'pause';
@@ -43,3 +44,5 @@ function buttons_disabled(){
   button_heart.disabled = playing? true : false;
   button_submit.disabled = playing? true : false;
 }
+
+function stop_count()
