@@ -33,3 +33,11 @@ document.addEventListener('click', (event)=>{
     console.log('plus3');
   }
 });
+
+function buttons_disable(){
+  button_pause.disable = true;
+  button_plus.disable = true;
+  button_minus.disable = true;
+  button_like.disable = true;
+  button_submit.disable = true;
+}
