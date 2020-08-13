@@ -42,7 +42,7 @@ document.addEventListener('click', (event)=>{
     const p = document.createElement('p');
     p.innerText = comment;
     document.querySelector('div#list').appendChild(p);
-    comment = '';
+    
     event.preventDefault();
   }
 
