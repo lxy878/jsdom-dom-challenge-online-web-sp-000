@@ -1,4 +1,4 @@
-let playing = true, count = 0;
+let playing = true;
 
 const button_pause = document.getElementById('pause');
 const button_plus = document.getElementById('plus');
