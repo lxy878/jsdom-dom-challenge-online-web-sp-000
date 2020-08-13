@@ -18,7 +18,6 @@ document.addEventListener('click', (event)=>{
   }else if (event.target.id === 'minus'){
     console.log('plus1');
   }else if (event.target.id === 'pause'){
-    const button = document.getElementById('pause');
     if(playing){
       button.textContent = 'resume';
       playing = false;
