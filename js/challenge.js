@@ -20,7 +20,7 @@ document.addEventListener('click', (event)=>{
       playing = false;
     }else{
       button.textContent = 'pause';
-      playing = false;
+      playing = true;
     }
   }else if (event.target.id === 'heart'){
     console.log('plus3');
