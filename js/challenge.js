@@ -34,7 +34,7 @@ document.addEventListener('click', (event)=>{
       playing = true;
     }
   }else if (event.target.id === 'heart'){
-    console.log('plus3');
+    const likes = document.getElementByClassName('likes');
   }
 });
 
