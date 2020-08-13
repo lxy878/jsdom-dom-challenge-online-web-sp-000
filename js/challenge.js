@@ -40,6 +40,8 @@ document.addEventListener('click', (event)=>{
   }else if (event.target.id === 'submit'){
     const comment = document.querySelector('input#comment-input').value
     const p = document.createElement('p');
+    p.innerText = comment;
+    
     event.preventDefault();
   }
 
