@@ -41,7 +41,7 @@ document.addEventListener('click', (event)=>{
     const comment = document.querySelector('input#comment-input').value
     const p = document.createElement('p');
     p.innerText = comment;
-    
+    document.querySelector('div#list').appendChild(p);
     event.preventDefault();
   }
 
