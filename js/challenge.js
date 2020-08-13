@@ -1,4 +1,4 @@
-let playing = true;
+var playing = true;
 // const timer = () => {
 //   return setInterval(function () {
 //     count += 1;
