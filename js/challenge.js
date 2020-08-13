@@ -1,11 +1,6 @@
 var playing = true, count = 0;
 
-const timer = () => {
-  return setInterval(function () {
-    count += 1;
-    counter.textContent = count;
-  }, 1000);
-}
+
 
 // let interval = timer();
 
