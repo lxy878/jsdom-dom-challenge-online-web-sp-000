@@ -35,7 +35,6 @@ document.addEventListener('click', (event)=>{
 });
 
 function buttons_disable(){
-  button_pause.disable = true;
   button_plus.disable = true;
   button_minus.disable = true;
   button_like.disable = true;
