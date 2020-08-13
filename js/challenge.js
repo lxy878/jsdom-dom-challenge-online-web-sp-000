@@ -12,7 +12,7 @@ const timer = () => {
   }, 1000);
 }
 
-let interval = timer();
+timer();
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
