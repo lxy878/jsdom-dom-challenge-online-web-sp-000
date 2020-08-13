@@ -43,6 +43,7 @@ function reset(){
   interval = timer();
   buttons_disabled();
 }
+
 function buttons_disabled(){
   button_plus.disabled = playing? true : false;
   button_minus.disabled = playing? true : false;
