@@ -16,8 +16,7 @@ document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
     interval = timer(countup);
   }else if (event.target.id === 'minus'){
-    count --;
-    counter.textContent = count;
+    let interval = timer(countdown);
   }else if (event.target.id === 'pause'){
     if(playing){
       button_pause.textContent = 'resume';
