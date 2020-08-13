@@ -1,7 +1,6 @@
 let playing = true, count = 0;
 
-const button_pause = document.getElementById('pause');
-const button_plus = document.getElementById('plus');
+const button_pause = document.getElementById('pause'), button_plus = document.getElementById('plus');
 const button_minus = document.getElementById('minus');
 const button_like = document.getElementById('likes');
 const button_submit = document.getElementById('submit');
