@@ -22,7 +22,7 @@ document.addEventListener('click', (event)=>{
       button_pause.textContent = 'resume';
       playing = false;
     }else{
-      button.textContent = 'pause';
+      button_pause.textContent = 'pause';
       playing = false;
     }
   }else if (event.target.id === 'heart'){
