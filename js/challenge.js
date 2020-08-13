@@ -7,7 +7,7 @@ const button_heart = document.getElementById('heart');
 const button_submit = document.getElementById('submit');
 
 const timer = () => {
-  return setInterval(function (count = 0) {
+  return setInterval(function () {
     count ++;
     counter.textContent = count;
   }, 1000);
