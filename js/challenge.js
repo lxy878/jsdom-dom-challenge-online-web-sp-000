@@ -35,8 +35,8 @@ document.addEventListener('click', (event)=>{
 });
 
 function buttons_disable(){
-  button_plus.disable = true;
-  button_minus.disable = true;
-  button_like.disable = true;
-  button_submit.disable = true;
+  button_plus.disable = playing? true : false;
+  button_minus.disable = playing? true : false;
+  button_like.disable = playing? true : false;
+  button_submit.disable = playing? true : false;
 }
