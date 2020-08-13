@@ -23,6 +23,7 @@ document.addEventListener('click', (event)=>{
   }else if (event.target.id === 'pause'){
     if(playing){
       button_pause.textContent = 'resume';
+      buttons_disable()
       playing = false;
     }else{
       button_pause.textContent = 'pause';
