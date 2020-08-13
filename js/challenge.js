@@ -6,17 +6,22 @@ const button_minus = document.getElementById('minus');
 const button_heart = document.getElementById('heart');
 const button_submit = document.getElementById('submit');
 
-const timer = (fun) => {
-  return setInterval(fun, 1000);
+const timer = () => {
+  return setInterval(function () {
+    count ++;
+    counter.textContent = count;
+  }, 1000);
 }
 
-let interval = timer(countup);
+let interval = timer();
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
-    interval = timer(countup);
+    count ++;
+    counter.textContent = count;
   }else if (event.target.id === 'minus'){
-    let interval = timer(countdown);
+    count --;
+    counter.textContent = count;
   }else if (event.target.id === 'pause'){
     if(playing){
       button_pause.textContent = 'resume';
@@ -42,15 +47,6 @@ document.addEventListener('click', (event)=>{
 
 });
 
-function countup(){
-  count ++;
-  counter.textContent = count;
-}
-
-function countdown(){
-  count --;
-  counter.textContent = count;
-}
 
 function reset(){
   count = 0;
