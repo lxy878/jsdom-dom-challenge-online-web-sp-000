@@ -14,8 +14,7 @@ let interval = timer(countup);
 
 document.addEventListener('click', (event)=>{
   if(event.target.id === 'plus'){
-    count ++;
-    counter.textContent = count;
+    nterval = timer(countup);
   }else if (event.target.id === 'minus'){
     count --;
     counter.textContent = count;
