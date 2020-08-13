@@ -47,6 +47,11 @@ document.addEventListener('click', (event)=>{
 
 });
 
+function countup(){
+  count ++;
+  counter.textContent = count;
+}
+
 function reset(){
   count = 0;
   counter.textContent = count;
