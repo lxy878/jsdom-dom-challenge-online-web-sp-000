@@ -20,7 +20,8 @@ document.addEventListener('click', (event)=>{
     count ++;
     counter.textContent = count;
   }else if (event.target.id === 'minus'){
-    console.log('plus1');
+    count --;
+    counter.textContent = count;
   }else if (event.target.id === 'pause'){
     if(playing){
       button_pause.textContent = 'resume';
