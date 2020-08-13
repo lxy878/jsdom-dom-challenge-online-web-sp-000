@@ -39,7 +39,7 @@ document.addEventListener('click', (event)=>{
     document.querySelector('ul.likes').appendChild(li);
   }else if (event.target.id === 'submit'){
     event.preventDefault();
-    event.target.reset();
+    // event.target.reset();
   }
 
 });
