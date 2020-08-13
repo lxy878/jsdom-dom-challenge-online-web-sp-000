@@ -39,6 +39,6 @@ document.addEventListener('click', (event)=>{
 function buttons_disabled(){
   button_plus.disabled = playing? true : false;
   button_minus.disabled = playing? true : false;
-  button_hearts.disabled = playing? true : false;
+  button_heart.disabled = playing? true : false;
   button_submit.disabled = playing? true : false;
 }
