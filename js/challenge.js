@@ -2,9 +2,9 @@ let playing = true, count = 0;
 
 const button_pause = document.getElementById('pause');
 const button_plus = document.getElementById('plus');
-const button_pause = document.getElementById('pause');
-const button_pause = document.getElementById('pause');
-const button_pause = document.getElementById('pause');
+const button_minus = document.getElementById('minus');
+const button_likes = document.getElementById('likes');
+const button_heart = document.getElementById('heart');
 
 const timer = () => {
   return setInterval(function () {
