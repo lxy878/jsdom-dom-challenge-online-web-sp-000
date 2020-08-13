@@ -40,4 +40,5 @@ function buttons_disabled(){
   button_plus.disabled = playing? true : false;
   button_minus.disabled = playing? true : false;
   button_likes.disabled = playing? true : false;
+  button_submit.disabled = playing? true : false;
 }
