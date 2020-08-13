@@ -26,7 +26,7 @@ document.addEventListener('click', (event)=>{
     if(playing){
       button_pause.textContent = 'resume';
       buttons_disabled();
-      clearInterval(interval)
+      clearInterval(interval);
       playing = false;
     }else{
       button_pause.textContent = 'pause';
