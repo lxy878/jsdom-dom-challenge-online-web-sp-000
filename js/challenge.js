@@ -9,7 +9,7 @@ const timer = () => {
   return setInterval(function () {
     count += 1;
     counter.textContent = count;
-  }, 1000)
+  }, 1000);
 }
 
 interval = timer();
